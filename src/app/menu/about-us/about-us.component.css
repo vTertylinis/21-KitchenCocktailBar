@@ -1,0 +1,20 @@
+
+/* Στυλ κειμένου */
+.about-us-container {
+  position: relative;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px 30px;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  line-height: 1.6;
+  background-color: rgba(0, 0, 0, 0.4); /* ημιδιαφανές μαύρο για αντίθεση */
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.7);
+}
+
+.about-us-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffcc00; /* ζεστό κίτρινο για αντίθεση */
+}

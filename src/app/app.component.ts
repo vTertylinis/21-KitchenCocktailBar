@@ -1,12 +1,27 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: false,
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-angular19-project';
+  menuVisible = true;
+  selectedItem: { label: string, link: string } | null = null;
+
+  constructor(private router: Router) {}
+
+  menuItems = [
+    { label: 'Home', link: '/home' },
+    { label: 'About us', link: '/anapsyktika' },
+    { label: 'Menu', link: '/menu' },
+    { label: 'Contact', link: '/contact' }
+  ];
+
+  onSelect(item: { label: string; link: string }) {
+    this.selectedItem = item;
+    this.router.navigate([item.link]);
+  }
 }
