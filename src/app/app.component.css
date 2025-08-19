@@ -25,3 +25,17 @@
   object-fit: cover;
   filter: brightness(0.6); /* σκοτεινιάζει το βίντεο για καλύτερη ανάγνωση */
 }
+
+
+.text-fit {
+  flex: 1 1 0;
+  min-width: 0;
+  background-color: black;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+
+  /* Dynamically adjust font size between 12px and 16px */
+  font-size: clamp(12px, 2vw, 16px);
+}
