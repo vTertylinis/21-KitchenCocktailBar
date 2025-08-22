@@ -1,17 +1,49 @@
 <div class="video-background">
-  <video autoplay [muted]="true" loop playsinline>
+  <video 
+    #bgVideo
+    autoplay
+    [muted]="true"
+    loop
+    playsinline
+    preload="auto"
+  >
     <source src="https://21video.s3.eu-north-1.amazonaws.com/21.mp4" type="video/mp4" />
     Το πρόγραμμα περιήγησής σας δεν υποστηρίζει την αναπαραγωγή βίντεο.
   </video>
 </div>
+
+
+
 <div class="d-flex flex-nowrap justify-content-center w-100" style="padding: 20px;">
   <button 
     class="btn m-1 flex-fill text-fit" 
     *ngFor="let item of menuItems" 
     (click)="onSelect(item)">
-    {{ item.label }}
+    {{ item.label | translate }}
   </button>
+
+  <!-- Flag-only dropdown -->
+  <div class="language-dropdown m-1">
+    <img 
+      class="selected-flag" 
+      [src]="selectedLanguage.flag" 
+      (click)="dropdownOpen = !dropdownOpen" 
+      alt="Flag" 
+    />
+
+    <div class="options" *ngIf="dropdownOpen">
+      <img 
+        *ngFor="let lang of languages" 
+        [src]="lang.flag" 
+        (click)="onLanguageChange(lang)" 
+        alt="Flag" 
+        class="option-flag"
+      />
+    </div>
+  </div>
 </div>
+
+
 
 
 

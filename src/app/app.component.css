@@ -10,6 +10,7 @@
 }
 
 .video-background {
+  background: black;
   position: fixed;
   top: 0;
   left: 0;
@@ -20,6 +21,7 @@
 }
 
 .video-background video {
+  background: black;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -38,4 +40,48 @@
 
   /* Dynamically adjust font size between 12px and 16px */
   font-size: clamp(12px, 2vw, 16px);
+}
+
+
+.language-dropdown {
+  position: relative;
+  width: 40px; /* small width for just flags */
+}
+
+.selected-flag {
+  width: 32px;
+  height: 20px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  z-index: 100;
+  padding: 4px;
+}
+
+.option-flag {
+  width: 32px;
+  height: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .language-dropdown {
+    width: 28px;
+  }
+  .selected-flag, .option-flag {
+    width: 28px;
+    height: 26px;
+  }
 }

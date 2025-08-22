@@ -6,6 +6,8 @@ import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { MenuPageComponent } from './menu-page/menu-page.component';
 import { ContactComponent } from './contact/contact.component';
+import { TranslatePipe } from "../pipes/translate.pipe";
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { ContactComponent } from './contact/contact.component';
   ],
   imports: [
     CommonModule,
-    FormsModule
-  ]
+    FormsModule,
+    TranslatePipe,
+    HttpClientModule 
+]
 })
 export class MenuModule { }

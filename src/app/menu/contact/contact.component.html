@@ -1,24 +1,24 @@
 <div class="contact-container">
-  <h1>Επικοινωνήστε μαζί μας</h1>
+  <h1>{{ 'CONTACT_TITLE' | translate }}</h1>
 
-  <p>Θα χαρούμε πολύ να ακούσουμε από εσάς! Επικοινωνήστε μαζί μας για κρατήσεις, ερωτήσεις ή οποιαδήποτε άλλη πληροφορία.</p>
+  <p>{{ 'CONTACT_INTRO' | translate }}</p>
 
   <div class="contact-details">
-    <p><strong>Διεύθυνση:</strong> Ηρώων 21, Ιερισσός, Χαλκιδική</p>
-    <p><strong>Τηλέφωνο:</strong> +30 123 456 7890</p>
-<p><strong>Email:</strong> info&#64;21kitchencocktailbar.gr</p>
+    <p><strong>{{ 'ADDRESS_LABEL' | translate }}:</strong> {{ 'ADDRESS' | translate }}</p>
+    <p><strong>{{ 'PHONE_LABEL' | translate }}:</strong> +30 2377022215</p>
+    <p><strong>{{ 'EMAIL_LABEL' | translate }}:</strong> info&#64;21kitchencocktailbar.gr</p>
   </div>
 
   <form class="contact-form">
-    <label for="name">Όνομα</label>
-    <input type="text" id="name" name="name" placeholder="Το όνομά σας" />
+    <label for="name">{{ 'FORM_NAME_LABEL' | translate }}</label>
+    <input type="text" id="name" name="name" placeholder="{{ 'FORM_NAME_PLACEHOLDER' | translate }}" />
 
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" placeholder="Το email σας" />
+    <label for="email">{{ 'FORM_EMAIL_LABEL' | translate }}</label>
+    <input type="email" id="email" name="email" placeholder="{{ 'FORM_EMAIL_PLACEHOLDER' | translate }}" />
 
-    <label for="message">Μήνυμα</label>
-    <textarea id="message" name="message" rows="5" placeholder="Το μήνυμά σας"></textarea>
+    <label for="message">{{ 'FORM_MESSAGE_LABEL' | translate }}</label>
+    <textarea id="message" name="message" rows="5" placeholder="{{ 'FORM_MESSAGE_PLACEHOLDER' | translate }}"></textarea>
 
-    <button type="submit">Αποστολή</button>
+    <button type="submit">{{ 'FORM_SUBMIT' | translate }}</button>
   </form>
 </div>
