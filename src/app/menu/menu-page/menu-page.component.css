@@ -39,3 +39,23 @@
   font-weight: 600;
   color: #2a9d8f;
 }
+.info-btn {
+  margin-left: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 14px;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+
+.info-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}

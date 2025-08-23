@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { routes } from './app.routes';
 import { AppComponent } from './app.component';
 import { MenuModule } from './menu/menu.module';
-import { TranslatePipe } from "./pipes/translate.pipe"; 
+import { TranslatePipe } from "./pipes/translate.pipe";
 
 @NgModule({
   declarations: [

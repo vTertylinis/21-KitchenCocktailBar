@@ -8,12 +8,14 @@ import { MenuPageComponent } from './menu-page/menu-page.component';
 import { ContactComponent } from './contact/contact.component';
 import { TranslatePipe } from "../pipes/translate.pipe";
 import { HttpClientModule } from '@angular/common/http';
+import { ItemInfoModalComponent } from '../item-info-modal/item-info-modal.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
     AboutUsComponent,
     MenuPageComponent,
+    ItemInfoModalComponent,
     ContactComponent
   ],
   imports: [

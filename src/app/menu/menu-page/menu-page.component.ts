@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './menu-page.component.css',
 })
 export class MenuPageComponent {
+selectedItem: any = null;
+isModalOpen = false;
+
   searchTerm: string = '';
 
   menuItems: MenuItem[] = [
@@ -111,16 +114,16 @@ export class MenuPageComponent {
     { id: 43, name: 'Mai tai', price: 10, category: 'Cocktails' },
     { id: 44, name: 'Long island', price: 10, category: 'Cocktails' },
     { id: 45, name: 'Pina colada', price: 10, category: 'Cocktails' },
-    { id: 46, name: 'Yuzi gun', price: 11, category: 'Cocktails' },
-    { id: 47, name: 'Cucu splash', price: 11, category: 'Cocktails' },
-    { id: 48, name: 'Passion paradise', price: 11, category: 'Cocktails' },
-    { id: 49, name: 'Green Apple Perfume', price: 11, category: 'Cocktails' },
+    { id: 46, name: 'Yuzi gun', price: 11, category: 'Cocktails',description:'Gin, pure yuzu, lemon juice, pink grapefruit soda, cinnamon' },
+    { id: 47, name: 'Cucu splash', price: 11, category: 'Cocktails',description:'Gin, lemon juice, cucumber liquer, falernum, ginger beer' },
+    { id: 48, name: 'Passion paradise', price: 11, category: 'Cocktails',description:'Vodka, pure strawberry, pure passion fruit, lemon juice' },
+    { id: 49, name: 'Green Apple Perfume', price: 11, category: 'Cocktails',description:'White rum, green apple liquer, falernum, lemon juice' },
     { id: 50, name: "Bartender's choice", price: 10, category: 'Cocktails' },
 
-  { id: 51, name: 'OMELETTE', price: 7, category: 'BREAKFAST' },
-  { id: 52, name: 'SCRAMBLED_EGGS', price: 6, category: 'BREAKFAST' },
-  { id: 53, name: 'SCRAMBLED_EGGS_SALMON', price: 7, category: 'BREAKFAST' },
-  { id: 54, name: 'FRENCH_TOAST_SIMPLE', price: 5, category: 'BREAKFAST' },
+  { id: 51, name: 'OMELETTE', price: 7, category: 'BREAKFAST',image:'https://21images.s3.eu-north-1.amazonaws.com/omeleta.png', description:'OMELETTE_DESC' },
+  { id: 52, name: 'SCRAMBLED_EGGS', price: 6, category: 'BREAKFAST',description:'SCRAMBLED_EGGS_DESC' },
+  { id: 53, name: 'SCRAMBLED_EGGS_SALMON', price: 7, category: 'BREAKFAST',description:'SCRAMBLED_EGGS_SALMON_DESC' },
+  { id: 54, name: 'FRENCH_TOAST_SIMPLE', price: 5,image:'https://21images.s3.eu-north-1.amazonaws.com/frenchtoast.png', category: 'BREAKFAST' },
   { id: 55, name: 'FRENCH_TOAST_HONEY_CINNAMON', price: 6, category: 'BREAKFAST' },
   { id: 56, name: 'PANCAKE_PRALINE', price: 7, category: 'BREAKFAST' },
   { id: 57, name: 'PANCAKE_HONEY_CINNAMON', price: 7, category: 'BREAKFAST' },
@@ -129,13 +132,13 @@ export class MenuPageComponent {
   { id: 60, name: 'YOGURT_HONEY_WALNUTS', price: 5, category: 'BREAKFAST' },
   { id: 61, name: 'YOGURT_HONEY_WALNUTS_FRUITS', price: 6, category: 'BREAKFAST' },
 
-  { id: 62, name: 'CLUB_SANDWICH', price: 9, category: 'CLUB_SANDWICH' },
-  { id: 63, name: 'CLUB_SANDWICH_CAESAR_CHICKEN', price: 11, category: 'CLUB_SANDWICH' },
-  { id: 64, name: 'CLUB_SANDWICH_GYRO', price: 11, category: 'CLUB_SANDWICH' },
-  { id: 65, name: 'CLUB_SANDWICH_PANSETSA', price: 12, category: 'CLUB_SANDWICH' },
+   { id: 62, name: 'CLUB_SANDWICH', price: 9, category: 'CLUB_SANDWICH', description:'CLUB_SANDWICH_DESC' },
+  { id: 63, name: 'CLUB_SANDWICH_CAESAR_CHICKEN', price: 11, category: 'CLUB_SANDWICH', description:'CLUB_SANDWICH_CAESAR_CHICKEN_DESC' },
+  { id: 64, name: 'CLUB_SANDWICH_GYRO', price: 11, category: 'CLUB_SANDWICH', description:'CLUB_SANDWICH_GYRO_DESC' },
+  { id: 65, name: 'CLUB_SANDWICH_PANSETSA', price: 12, category: 'CLUB_SANDWICH', image:'https://21images.s3.eu-north-1.amazonaws.com/clubpanseta.png', description:'CLUB_SANDWICH_PANSETSA_DESC' },
 
-  { id: 66, name: 'JUNIOR_1', price: 7.5, category: 'JUNIOR_MENU' },
-  { id: 67, name: 'JUNIOR_2', price: 7.5, category: 'JUNIOR_MENU' },
+  { id: 66, name: 'JUNIOR_1', price: 7.5, category: 'JUNIOR_MENU', description:'JUNIOR_1_DESC' },
+  { id: 67, name: 'JUNIOR_2', price: 7.5, category: 'JUNIOR_MENU', description:'JUNIOR_2_DESC' },
 
   { id: 68, name: 'OUZO_GLASS', price: 3, category: 'OUZO_MEZE' },
   { id: 69, name: 'MEZE', price: 3, category: 'OUZO_MEZE' },
@@ -143,55 +146,53 @@ export class MenuPageComponent {
   { id: 71, name: 'APOSTOLAKI', price: 10, category: 'OUZO_MEZE' },
 
   // Pinsa
-  { id: 72, name: 'PINSA_SIMPLE', price: 11, category: 'PINSA' },
-  { id: 73, name: 'PINSA_MARGARITA', price: 11, category: 'PINSA' },
-  { id: 74, name: 'PINSA_SPECIAL', price: 12, category: 'PINSA' },
-  { id: 75, name: 'PINSA_21', price: 12, category: 'PINSA' },
+  { id: 72, name: 'PINSA_SIMPLE', price: 11, category: 'PINSA', image:'https://21images.s3.eu-north-1.amazonaws.com/pinsaapli.png', description:'PINSA_SIMPLE_DESC' },
+  { id: 73, name: 'PINSA_MARGARITA', price: 11, category: 'PINSA', description:'PINSA_MARGARITA_DESC' },
+  { id: 74, name: 'PINSA_SPECIAL', price: 12, category: 'PINSA', description:'PINSA_SPECIAL_DESC' },
+  { id: 75, name: 'PINSA_21', price: 12, category: 'PINSA', image:'https://21images.s3.eu-north-1.amazonaws.com/pinsa21.png', description:'PINSA_21_DESC' },
 
-  // Pasta
-  { id: 76, name: 'NAPOLITANA', price: 8, category: 'PASTA' },
-  { id: 77, name: 'BOLOGNESE', price: 9, category: 'PASTA' },
-  { id: 78, name: 'CARBONARA', price: 9, category: 'PASTA' },
-  { id: 79, name: 'PASTA_21', price: 9, category: 'PASTA' },
-  { id: 80, name: 'SHRIMP_PASTA', price: 18, category: 'PASTA' },
-  { id: 81, name: 'PAPPARDELLE_OX_TAIL', price: 16, category: 'PASTA' },
-  { id: 82, name: 'LINGUINI_OCTOPUS', price: 18, category: 'PASTA' },
+  { id: 76, name: 'NAPOLITANA', price: 8, category: 'PASTA', description:'NAPOLITANA_DESC' },
+  { id: 77, name: 'BOLOGNESE', price: 9, category: 'PASTA', description:'BOLOGNESE_DESC' },
+  { id: 78, name: 'CARBONARA', price: 9, category: 'PASTA', description:'CARBONARA_DESC' },
+  { id: 79, name: 'PASTA_21', price: 9, category: 'PASTA', description:'PASTA_21_DESC' },
+  { id: 80, name: 'SHRIMP_PASTA', price: 18, category: 'PASTA', image:'https://21images.s3.eu-north-1.amazonaws.com/garidomakaronada.png', description:'SHRIMP_PASTA_DESC' },
+  { id: 81, name: 'PAPPARDELLE_OX_TAIL', price: 16, category: 'PASTA', image:'https://21images.s3.eu-north-1.amazonaws.com/papardelaragou.png', description:'PAPPARDELLE_OX_TAIL_DESC' },
+  { id: 82, name: 'RISOTI', price: 18, category: 'PASTA', description:'RISOTI_DESC' },
+  { id: 83, name: 'LINGUINI_OCTOPUS', price: 18, category: 'PASTA', description:'LINGUINI_OCTOPUS_DESC' },
 
-  // Hot Dogs & Burgers
-  { id: 83, name: 'HOT_DOG', price: 6, category: 'HOTDOG_BURGERS' },
-  { id: 84, name: 'BURGER_BBQ', price: 9, category: 'HOTDOG_BURGERS' },
-  { id: 85, name: 'BURGER_CAESAR', price: 9, category: 'HOTDOG_BURGERS' },
-  { id: 86, name: 'BURGER_21', price: 10, category: 'HOTDOG_BURGERS' },
-  { id: 87, name: 'DOUBLE_CHEESE_BURGER', price: 10, category: 'HOTDOG_BURGERS' },
-  { id: 88, name: 'CHICKEN_CRISPY_BURGER', price: 9, category: 'HOTDOG_BURGERS' },
+  { id: 84, name: 'HOT_DOG', price: 6, category: 'HOTDOG_BURGERS', description:'HOT_DOG_DESC' },
+  { id: 85, name: 'BURGER_BBQ', price: 9, category: 'HOTDOG_BURGERS', description:'BURGER_BBQ_DESC' },
+  { id: 86, name: 'BURGER_CAESAR', price: 9, category: 'HOTDOG_BURGERS', description:'BURGER_CAESAR_DESC' },
+  { id: 87, name: 'BURGER_21', price: 10, category: 'HOTDOG_BURGERS', image:'https://21images.s3.eu-north-1.amazonaws.com/burger.png', description:'BURGER_21_DESC' },
+  { id: 88, name: 'DOUBLE_CHEESE_BURGER', price: 10, category: 'HOTDOG_BURGERS', description:'DOUBLE_CHEESE_BURGER_DESC' },
+  { id: 89, name: 'CHICKEN_CRISPY_BURGER', price: 9, category: 'HOTDOG_BURGERS', description:'CHICKEN_CRISPY_BURGER_DESC' },
 
   // Bao Buns
-  { id: 89, name: 'SHRIMP_CHILI_BAO', price: 8, category: 'BAO_BUNS' },
-  { id: 90, name: 'NUGGETS_BAO', price: 7, category: 'BAO_BUNS' },
-  { id: 91, name: 'PULLED_PORK_BAO', price: 7, category: 'BAO_BUNS' },
+  { id: 89, name: 'SHRIMP_CHILI_BAO', price: 8, category: 'BAO_BUNS', image: 'https://21images.s3.eu-north-1.amazonaws.com/garida.png', description: 'SHRIMP_CHILI_BAO_DESC' },
+  { id: 90, name: 'NUGGETS_BAO', price: 7, category: 'BAO_BUNS', image: 'https://21images.s3.eu-north-1.amazonaws.com/baogarida.png', description: 'NUGGETS_BAO_DESC' },
+  { id: 91, name: 'PULLED_PORK_BAO', price: 7, category: 'BAO_BUNS', image: 'https://21images.s3.eu-north-1.amazonaws.com/pull.png', description: 'PULLED_PORK_BAO_DESC' },
 
-  { id: 92, name: 'SALAD_CAESAR', price: 8.5, category: 'SALADS' },
-  { id: 93, name: 'SALAD_21', price: 8, category: 'SALADS' },
-  { id: 94, name: 'SALAD_CAPRESE', price: 7, category: 'SALADS' },
-  { id: 95, name: 'SALAD_KOUKOUVAGIA', price: 8, category: 'SALADS' },
-  { id: 96, name: 'SALAD_GREEK', price: 8, category: 'SALADS' },
-  { id: 97, name: 'CHEESE_PLATTER', price: 12, category: 'SALADS' },
+  { id: 92, name: 'SALAD_CAESAR', price: 8.5, category: 'SALADS', description: 'SALAD_CAESAR_DESC' },
+  { id: 93, name: 'SALAD_21', price: 8, category: 'SALADS', image: 'https://21images.s3.eu-north-1.amazonaws.com/salata.png', description: 'SALAD_21_DESC' },
+  { id: 94, name: 'SALAD_CAPRESE', price: 7, category: 'SALADS', description: 'SALAD_CAPRESE_DESC' },
+  { id: 95, name: 'SALAD_KOUKOUVAGIA', price: 8, category: 'SALADS', description: 'SALAD_KOUKOUVAGIA_DESC' },
+  { id: 96, name: 'SALAD_GREEK', price: 8, category: 'SALADS', description: 'SALAD_GREEK_DESC' },
+  { id: 97, name: 'CHEESE_PLATTER', price: 12, category: 'SALADS', description: 'CHEESE_PLATTER_DESC' },
 
   // Main Courses
   { id: 98, name: 'RISOTTO_MUSHROOM', price: 15, category: 'MAIN_COURSES' },
-  { id: 99, name: 'PORK_PANSETTO', price: 15, category: 'MAIN_COURSES' },
-  { id: 100, name: 'TORTILLA_PORK_GYRO', price: 6, category: 'MAIN_COURSES' },
-  { id: 101, name: 'CHICKEN_NUGGETS', price: 11, category: 'MAIN_COURSES' },
-  { id: 102, name: 'CHICKEN_NUGGETS_A_LA_CREME', price: 12, category: 'MAIN_COURSES' },
-  { id: 103, name: 'FRIED_CALAMARI', price: 12, category: 'MAIN_COURSES' },
-  { id: 104, name: 'SALMON_TERIYAKI', price: 18, category: 'MAIN_COURSES' },
-  { id: 105, name: 'CHICKEN_THIGH', price: 11, category: 'MAIN_COURSES' },
-  { id: 106, name: 'BEEF_PATTY', price: 11, category: 'MAIN_COURSES' },
-  { id: 107, name: 'PORK_GYRO', price: 11, category: 'MAIN_COURSES' },
-  { id: 108, name: 'MIX_GRILL', price: 17, category: 'MAIN_COURSES' },
+  { id: 99, name: 'PORK_PANSETTO', price: 15, category: 'MAIN_COURSES', description: 'PORK_PANSETTO_DESC' },
+  { id: 100, name: 'TORTILLA_PORK_GYRO', price: 6, category: 'MAIN_COURSES', description: 'TORTILLA_PORK_GYRO_DESC' },
+  { id: 101, name: 'CHICKEN_NUGGETS', price: 11, category: 'MAIN_COURSES', image: 'https://21images.s3.eu-north-1.amazonaws.com/nuggets.jpg', description: 'CHICKEN_NUGGETS_DESC' },
+  { id: 102, name: 'CHICKEN_NUGGETS_A_LA_CREME', price: 12, category: 'MAIN_COURSES', image: 'https://21images.s3.eu-north-1.amazonaws.com/alacreme.png', description: 'CHICKEN_NUGGETS_A_LA_CREME_DESC' },
+  { id: 103, name: 'FRIED_CALAMARI', price: 12, category: 'MAIN_COURSES', image: 'https://21images.s3.eu-north-1.amazonaws.com/kalamari.png', description: 'FRIED_CALAMARI_DESC' },
+  { id: 104, name: 'SALMON_TERIYAKI', price: 18, category: 'MAIN_COURSES', image: 'https://21images.s3.eu-north-1.amazonaws.com/solomos.png', description: 'SALMON_TERIYAKI_DESC' },
+  { id: 105, name: 'CHICKEN_THIGH', price: 11, category: 'MAIN_COURSES', description: 'CHICKEN_THIGH_DESC' },
+  { id: 106, name: 'BEEF_PATTY', price: 11, category: 'MAIN_COURSES', description: 'BEEF_PATTY_DESC' },
+  { id: 107, name: 'PORK_GYRO', price: 11, category: 'MAIN_COURSES', description: 'PORK_GYRO_DESC' },
+  { id: 108, name: 'MIX_GRILL', price: 17, category: 'MAIN_COURSES', description: 'MIX_GRILL_DESC' },
   { id: 109, name: 'FRIES_PORTION', price: 5, category: 'MAIN_COURSES' }
   ];
-
   categories: string[] = [];
 
   ngOnInit(): void {
@@ -205,6 +206,16 @@ export class MenuPageComponent {
   getItemsByCategory(category: string): MenuItem[] {
     return this.menuItems.filter((item) => item.category === category);
   }
+
+  showItemInfo(item: any) {
+  this.selectedItem = item;
+  this.isModalOpen = true;
+}
+
+closeModal() {
+  this.isModalOpen = false;
+}
+
 }
 
 export interface MenuItem {
@@ -212,4 +223,6 @@ export interface MenuItem {
   name: string;
   price: number;
   category: string;
+  image?:string;
+  description? :string;
 }

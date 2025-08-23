@@ -213,6 +213,10 @@
     "en": "Pappardelle Ragu with Oxtail",
     "gr": "Παπαρδέλα ραγού με μοσχαρίσια ουρά"
   },
+  "RISOTI": {
+    "en": "Mushroom risotto",
+    "gr": "Ριζότο μανιταριών"
+  },
   "LINGUINI_OCTOPUS": {
     "en": "Linguini with Octopus",
     "gr": "Λιγκουίνι χταπόδι"
@@ -323,5 +327,212 @@
   "FORM_MESSAGE_LABEL": { "en": "Message", "gr": "Μήνυμα" },
   "FORM_MESSAGE_PLACEHOLDER": { "en": "Your message", "gr": "Το μήνυμά σας" },
 
-  "FORM_SUBMIT": { "en": "Send", "gr": "Αποστολή" }
+  "FORM_SUBMIT": { "en": "Send", "gr": "Αποστολή" },
+
+  "PORK_PANSETTO_DESC": { 
+    "en": "With French fries, fresh salad, yogurt sauce, grilled pita bread, and dips of ketchup and mustard", 
+    "gr": "Με τηγανητές πατάτες, δροσερή σαλάτα, sauce γιαουρτιού, ψημένα πιτάκια και ντιπάκι κέτσαπ, μουστάρδα" 
+  },
+
+  "TORTILLA_PORK_GYRO_DESC": { 
+    "en": "Grilled tortilla, tzatziki, tomato, fresh salad. Served with fries", 
+    "gr": "Τορίγια ψημένη, τζατζίκι, ντομάτα, δροσερή σαλάτα. Συνοδεύεται με πατάτες" 
+  },
+
+  "CHICKEN_NUGGETS_DESC": { 
+    "en": "Chicken breast fillet bites breaded with panko, fresh salad, mustard-mayo sauce, and fries", 
+    "gr": "Μπουκιές φιλέτο στήθος κοτόπουλο παναρισμένα με πάνκο, δροσερή σαλάτα, sauce μουσταρδομαγιονέζας και πατάτες" 
+  },
+
+  "CHICKEN_NUGGETS_A_LA_CREME_DESC": { 
+    "en": "Chicken breast fillet bites breaded with panko in cream sauce, served with fresh salad, mustard-mayo sauce, and French fries", 
+    "gr": "Μπουκιές φιλέτο στήθος κοτόπουλο παναρισμένα με πάνκο σε κρέμα γάλακτος, δροσερή σαλάτα, sauce μουσταρδομαγιονέζας και τηγανητές πατάτες" 
+  },
+
+  "FRIED_CALAMARI_DESC": { 
+    "en": "Served with fresh salad and cheese dip", 
+    "gr": "Συνοδεύεται με δροσερή σαλάτα και τυροσαλάτα" 
+  },
+
+  "SALMON_TERIYAKI_DESC": { 
+    "en": "Grilled salmon with teriyaki sauce and smoked vegetables", 
+    "gr": "Σολομός ψητός με τεριγιάκι sauce και καπνιστά λαχανικά" 
+  },
+
+  "CHICKEN_THIGH_DESC": { 
+    "en": "Chicken thigh fillet served with fresh salad and French fries", 
+    "gr": "Φιλέτο μπούτι κοτόπουλο συνοδεύεται από δροσερή σαλάτα και τηγανητές πατάτες" 
+  },
+
+  "BEEF_PATTY_DESC": { 
+    "en": "Handmade beef patty from fresh ground beef, served with fresh salad and French fries", 
+    "gr": "Χειροποίητο μπιφτέκι από φρέσκο μοσχαρίσιο κιμά, συνοδεύεται από δροσερή σαλάτα και τηγανητές πατάτες" 
+  },
+
+  "PORK_GYRO_DESC": { 
+    "en": "Pork gyro portion with tzatziki, tomato, onion, served with salad and French fries", 
+    "gr": "Μερίδα γύρος χοιρινός, τζατζίκι, ντομάτα, κρεμμύδι, συνοδεύεται με σαλάτα και τηγανητές πατάτες" 
+  },
+
+  "MIX_GRILL_DESC": { 
+    "en": "Mixed grill with pork gyro, sausage, beef patty, chicken fillet, served with fresh salad, French fries, and pita bread", 
+    "gr": "Mix grill κρεατικών γύρος, λουκάνικο, μπιφτέκι, φιλέτο κοτόπουλο, συνοδεύεται από δροσερή σαλάτα, τηγανητές πατάτες και πιτάκια" 
+  },
+  "SHRIMP_CHILI_BAO_DESC": {
+    "gr": "Γαρίδες σοτέ, chili mayo, φρέσκο κρεμμυδάκι.",
+    "en": "Sautéed shrimp, chili mayo, fresh spring onion."
+  },
+  "NUGGETS_BAO_DESC": {
+    "gr": "Στήθος κοτόπουλο παναρισμένο, coleslaw σαλάτα, φρέσκο κρεμμυδάκι.",
+    "en": "Breaded chicken breast, coleslaw salad, fresh spring onion."
+  },
+  "PULLED_PORK_BAO_DESC": {
+    "gr": "Τραβηγμένο χοιρινό, bbq sauce, φρέσκο κρεμμυδάκι.",
+    "en": "Pulled pork, BBQ sauce, fresh spring onion."
+  },
+
+  "SALAD_CAESAR_DESC": {
+    "gr": "Με iceberg, ψητό φιλέτο μπούτι κοτόπουλο, chips από μπέικον, caesar sauce και αρωματικά κρουτόνς",
+    "en": "With iceberg lettuce, grilled chicken thigh fillet, bacon chips, Caesar sauce, and aromatic croutons."
+  },
+  "SALAD_21_DESC": {
+    "gr": "Πράσινη σαλάτα με chips από μπέικον, φλέικς παρμεζάνας, λιαστή ντομάτα, ξηροί καρποί, βινεγκρέτ εσπεριδοειδών με μέλι, μουστάρδα και κριςπ τορτίγια",
+    "en": "Green salad with bacon chips, parmesan flakes, sun-dried tomato, nuts, citrus vinaigrette with honey and mustard, and crispy tortilla."
+  },
+  "SALAD_CAPRESE_DESC": {
+    "gr": "Ντομάτα, μοτσαρέλα, ντάκο, pesto βασιλικού και φύλλα βασιλικού",
+    "en": "Tomato, mozzarella, dakos barley rusk, basil pesto, and basil leaves."
+  },
+  "SALAD_KOUKOUVAGIA_DESC": {
+    "gr": "Ντοματίνια, αγγούρι, πιπεριές, φρέσκο κρεμμύδι, ντάκος, κάπαρη, τριμμένη φέτα (Σταθώρη)",
+    "en": "Cherry tomatoes, cucumber, peppers, fresh onion, dakos barley rusk, capers, grated feta (Stathoris)."
+  },
+  "SALAD_GREEK_DESC": {
+    "gr": "Ντομάτα, αγγούρι, πιπεριές, κρεμμύδι, ελιές, κάπαρη, φέτα (Σταθώρη)",
+    "en": "Tomato, cucumber, peppers, onion, olives, capers, feta cheese (Stathoris)."
+  },
+  "CHEESE_PLATTER_DESC": {
+    "gr": "Τοπικά τυριά Σταθώρη και Καραγιάννη (τιμή κατ΄άτομο)",
+    "en": "Local cheeses Stathoris and Karagiannis (price per person)."
+  },
+  "PINSA_SIMPLE_DESC": {
+    "gr": "Σάλτσα ντομάτας, τυρί gouda, ζαμπόν, μανιτάρια, πιπεριά, φρέσκια ρίγανη",
+    "en": "Tomato sauce, gouda cheese, ham, mushrooms, peppers, fresh oregano."
+  },
+  "PINSA_MARGARITA_DESC": {
+    "gr": "Κλασική πίτσα με σάλτσα ντομάτας, μοτσαρέλα και φρέσκο βασιλικό",
+    "en": "Classic pizza with tomato sauce, mozzarella, and fresh basil."
+  },
+  "PINSA_SPECIAL_DESC": {
+    "gr": "Σάλτσα ντομάτας, τυρί gouda, ζαμπόν, μπέικον, αέρος, πεπερόνι, μανιτάρια, πιπεριά, μοτσαρέλα, φρέσκια ρίγανη",
+    "en": "Tomato sauce, gouda cheese, ham, bacon, salami, pepperoni, mushrooms, peppers, mozzarella, fresh oregano."
+  },
+  "PINSA_21_DESC": {
+    "gr": "Κρέμα γάλακτος, τυρί φιλαδέλφεια, μανιτάρια, μπέικον, φιλέτο μπούτι κοτόπουλο, μοτσαρέλα",
+    "en": "Cream, Philadelphia cheese, mushrooms, bacon, chicken thigh fillet, mozzarella."
+  },
+
+  "NAPOLITANA_DESC": {
+    "gr": "Ζυμαρικά ματσάτα με απαλή ροζ σάλτσα από φρέσκα ντοματίνια, φρέσκο βασιλικό, δυόσμο, παρμεζάνα και φρέσκο βούτυρο",
+    "en": "Matsata pasta with light pink sauce from fresh cherry tomatoes, fresh basil, mint, parmesan, and fresh butter."
+  },
+  "BOLOGNESE_DESC": {
+    "gr": "Ζυμαρικά λιγκουίνι με φρέσκο μοσχαρίσιο κιμά, σάλτσα ντομάτας, παρμεζάνα και φρέσκο βούτυρο",
+    "en": "Linguine pasta with fresh ground beef, tomato sauce, parmesan, and fresh butter."
+  },
+  "CARBONARA_DESC": {
+    "gr": "Ζυμαρικά λιγκουίνι, τραγανό μπέικον, κρέμα γάλακτος, κρόκο αυγού, παρμεζάνα και φρέσκο βούτυρο",
+    "en": "Linguine pasta, crispy bacon, cream, egg yolk, parmesan, and fresh butter."
+  },
+  "PASTA_21_DESC": {
+    "gr": "Ζυμαρικά casarecce με φρέσκα λαχανικά, κρέμα γάλακτος, τυρί φιλαδέλφεια, παρμεζάνα και φρέσκο βούτυρο",
+    "en": "Casarecce pasta with fresh vegetables, cream, Philadelphia cheese, parmesan, and fresh butter."
+  },
+  "SHRIMP_PASTA_DESC": {
+    "gr": "Ζυμαρικά λιγκουίνι, γαρίδες σοτέ, mirepoix λαχανικών, φρέσκια σάλτσα τομάτας και φύλλα βασιλικού.",
+    "en": "Linguine pasta, sautéed shrimp, vegetable mirepoix, fresh tomato sauce, and basil leaves."
+  },
+  "PAPPARDELLE_OX_TAIL_DESC": {
+    "gr": "Παπαρδέλες με ραγού ουράς μοσχαριού",
+    "en": "Pappardelle with oxtail ragout."
+  },
+  "RISOTI_DESC": {
+    "gr": "Ποικιλία μανιταριών, παρμεζάνα, φρέσκο βούτυρο",
+    "en": "Variety of mushrooms, parmesan, fresh butter."
+  },
+  "LINGUINI_OCTOPUS_DESC": {
+    "gr": "Λιγκουίνι ολικής, με χταπόδι, γαρίδα, κάπαρη, ελιά",
+    "en": "Wholegrain linguine with octopus, shrimp, capers, and olives."
+  },
+
+  "HOT_DOG_DESC": {
+    "gr": "Με λουκάνικο φρανκφούρτης, φρέσκια ρίγανη, μουστάρδα, κέτσαπ και πατάτες τηγανητές",
+    "en": "With frankfurter sausage, fresh oregano, mustard, ketchup, and French fries."
+  },
+  "BURGER_BBQ_DESC": {
+    "gr": "Ψωμάκι μπριός, μοσχαρίσιος κιμάς, sauce bbq, τυρί τσένταρ, ντομάτα, ψητό μπέικον, κρεμμύδι, iceberg. Συνοδεύεται με τηγανητές πατάτες, bbq sauce και δροσερή σαλάτα",
+    "en": "Brioche bun, beef patty, BBQ sauce, cheddar cheese, tomato, grilled bacon, onion, iceberg lettuce. Served with French fries, BBQ sauce, and fresh salad."
+  },
+  "BURGER_CAESAR_DESC": {
+    "gr": "Ψωμάκι μπριός, φιλέτο μπούτι κοτόπουλο, ντομάτα, iceberg, sauce μουσταρδομαγιονέζα, παρμεζάνα. Συνοδεύεται με πατάτες και δροσερή σαλάτα",
+    "en": "Brioche bun, chicken thigh fillet, tomato, iceberg lettuce, mustard-mayo sauce, parmesan. Served with fries and fresh salad."
+  },
+  "BURGER_21_DESC": {
+    "gr": "Ψωμάκι μπριός, μοσχαρίσιος κιμάς, κατσικίσιο τυρί (Σταθώρη), σως μαγιονέζας με λάδι τρούφας, καραμελωμένα κρεμμύδια και μανιτάρια με sauce τεριγιάκι. Συνοδεύεται με τηγανητές πατάτες, sauce μαγιονέζας με λάδι τρούφας και δροσερή σαλάτα",
+    "en": "Brioche bun, beef patty, goat cheese (Stathoris), truffle oil mayo, caramelized onions, and mushrooms with teriyaki sauce. Served with French fries, truffle mayo sauce, and fresh salad."
+  },
+  "DOUBLE_CHEESE_BURGER_DESC": {
+    "gr": "Ψωμάκι μπριός, μπιφτέκι burger με διπλό τσένταρ, μαγιονέζα με ψιλοκομμένη πίκλα, φέτα κρεμμύδι, αγγουρομαγιονέζα, πράσινη σαλάτα, ντομάτα, πατάτες τηγανητές και δροσερή σαλάτα",
+    "en": "Brioche bun, burger patty with double cheddar, mayo with chopped pickle, onion slices, cucumber-mayo, green salad, tomato, French fries, and fresh salad."
+  },
+  "CHICKEN_CRISPY_BURGER_DESC": {
+    "gr": "Ψωμάκι μπριός, μουσταρδομαγιονέζα, crispy chicken, ντομάτα, πράσινη σαλάτα, πατάτες τηγανητές και δροσερή σαλάτα",
+    "en": "Brioche bun, mustard-mayo, crispy chicken, tomato, green salad, French fries, and fresh salad."
+  },
+   "CLUB_SANDWICH_DESC": {
+    "gr": "με τυρί gouda, γαλοπούλα, ντομάτα, iceberg, ομελέτα, μαγιονέζα. Συνοδεύεται με πατάτες τηγανητές.",
+    "en": "with gouda cheese, turkey, tomato, iceberg lettuce, omelette, mayonnaise. Served with French fries."
+  },
+  "CLUB_SANDWICH_CAESAR_CHICKEN_DESC": {
+    "gr": "με φιλέτο μπούτι, τυρί gouda, μπέικον, ντομάτα, iceberg, caesar sauce. Συνοδεύεται με πατάτες τηγανητές.",
+    "en": "with chicken thigh fillet, gouda cheese, bacon, tomato, iceberg, Caesar sauce. Served with French fries."
+  },
+  "CLUB_SANDWICH_GYRO_DESC": {
+    "gr": "τυρί gouda, ντομάτα, iceberg, sauce μουσταρδομαγιονέζα, γύρος χοίρινος, φρέσκια ρίγανη. Συνοδεύεται με πατάτες τηγανητές.",
+    "en": "gouda cheese, tomato, iceberg, mustard-mayo sauce, pork gyro, fresh oregano. Served with French fries."
+  },
+  "CLUB_SANDWICH_PANSETSA_DESC": {
+    "gr": "Με τυρί gouda, μπριζόλα καπνιστή, ντομάτα, iceberg, sauce μουσταρδομαγιονέζας, χοιρινή πανσέτα. Συνοδεύεται από τηγανητές πατάτες.",
+    "en": "with gouda cheese, smoked pork steak, tomato, iceberg, mustard-mayo sauce, pork pancetta. Served with French fries."
+  },
+  "JUNIOR_1_DESC": {
+    "gr": "ψωμάκι burger bun, μπιφτέκι με ανάμεικτο κιμά, κέτσαπ, μουστάρδα, τηγανητές πατάτες, χυμός και δωράκι.",
+    "en": "burger bun, mixed meat patty, ketchup, mustard, French fries, juice and a small gift."
+  },
+  "JUNIOR_2_DESC": {
+    "gr": "nuggets, τηγανητές πατάτες, χυμός και δωράκι.",
+    "en": "nuggets, French fries, juice and a small gift."
+  },
+  "OMELETTE_DESC": {
+    "gr": "Με υλικά της επιλογής σας",
+    "en": "With ingredients of your choice."
+  },
+  "SCRAMBLED_EGGS_DESC": {
+    "gr": "Σε φρυγανισμένη μπαγκέτα και παρμεζάνα",
+    "en": "On toasted baguette with parmesan."
+  },
+  "SCRAMBLED_EGGS_SALMON_DESC": {
+    "gr": "Σε φρυγανισμένη μπαγκέτα και σολομό καπνιστό",
+    "en": "On toasted baguette with smoked salmon."
+  },
+  "PRICE": {
+    "gr": "Τιμή",
+    "en": "Price"
+  },
+  "CLOSE": {
+    "gr": "Κλείσιμο",
+    "en": "Close"
+  }
+
+
 }

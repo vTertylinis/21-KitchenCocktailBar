@@ -3,7 +3,14 @@
     <h2 style="color: white;">{{ category | translate }}</h2>
     <ul>
       <li *ngFor="let item of getItemsByCategory(category)" class="menu-item">
-        <span style="color: white;" class="item-name">{{ item.name | translate }}</span>
+        <span style="color: white;" class="item-name">
+          {{ item.name | translate }}
+          <button *ngIf="item.image || item.description" (click)="showItemInfo(item)" class="info-btn"
+            title="More info">
+            ℹ
+          </button>
+
+        </span>
         <span class="item-price">
           {{ item.price | currency:'EUR':'symbol':'1.2-2' }}
         </span>
@@ -11,3 +18,7 @@
     </ul>
   </div>
 </div>
+
+
+<app-item-info-modal [item]="selectedItem" [isOpen]="isModalOpen" (close)="closeModal()">
+</app-item-info-modal>

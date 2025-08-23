@@ -1,0 +1,13 @@
+<div class="modal-backdrop" *ngIf="isOpen">
+  <div class="modal-content">
+    <h3>{{ item?.name | translate }}</h3>
+    
+    <!-- Display image if available -->
+    <img *ngIf="item?.image" [src]="item.image" alt="{{ item.name }}" class="item-image">
+    
+    <p>{{ item?.description | translate }}</p>
+    <p><strong>{{'PRICE' | translate}}: </strong>{{ item?.price | currency:'EUR':'symbol':'1.2-2' }}</p>
+    
+    <button class="close-btn" (click)="onClose()">{{"CLOSE" | translate}}</button>
+  </div>
+</div>
