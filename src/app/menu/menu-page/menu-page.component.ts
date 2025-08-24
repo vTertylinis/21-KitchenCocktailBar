@@ -134,7 +134,7 @@ isModalOpen = false;
 
    { id: 62, name: 'CLUB_SANDWICH', price: 9, category: 'CLUB_SANDWICH', description:'CLUB_SANDWICH_DESC' },
   { id: 63, name: 'CLUB_SANDWICH_CAESAR_CHICKEN', price: 11, category: 'CLUB_SANDWICH', description:'CLUB_SANDWICH_CAESAR_CHICKEN_DESC' },
-  { id: 64, name: 'CLUB_SANDWICH_GYRO', price: 11, category: 'CLUB_SANDWICH', description:'CLUB_SANDWICH_GYRO_DESC' },
+  { id: 64, name: 'CLUB_SANDWICH_GYRO', price: 11, category: 'CLUB_SANDWICH', description:'CLUB_SANDWICH_GYRO_DESC',image:'https://21images.s3.eu-north-1.amazonaws.com/gyrosclub.jpg' },
   { id: 65, name: 'CLUB_SANDWICH_PANSETSA', price: 12, category: 'CLUB_SANDWICH', image:'https://21images.s3.eu-north-1.amazonaws.com/clubpanseta.png', description:'CLUB_SANDWICH_PANSETSA_DESC' },
 
   { id: 66, name: 'JUNIOR_1', price: 7.5, category: 'JUNIOR_MENU', description:'JUNIOR_1_DESC' },
@@ -154,18 +154,20 @@ isModalOpen = false;
   { id: 76, name: 'NAPOLITANA', price: 8, category: 'PASTA', description:'NAPOLITANA_DESC' },
   { id: 77, name: 'BOLOGNESE', price: 9, category: 'PASTA', description:'BOLOGNESE_DESC' },
   { id: 78, name: 'CARBONARA', price: 9, category: 'PASTA', description:'CARBONARA_DESC' },
-  { id: 79, name: 'PASTA_21', price: 9, category: 'PASTA', description:'PASTA_21_DESC' },
+  { id: 79, name: 'PASTA_21', price: 9, category: 'PASTA', description:'PASTA_21_DESC', image:'https://21images.s3.eu-north-1.amazonaws.com/pasta21.jpg' },
   { id: 80, name: 'SHRIMP_PASTA', price: 18, category: 'PASTA', image:'https://21images.s3.eu-north-1.amazonaws.com/garidomakaronada.png', description:'SHRIMP_PASTA_DESC' },
   { id: 81, name: 'PAPPARDELLE_OX_TAIL', price: 16, category: 'PASTA', image:'https://21images.s3.eu-north-1.amazonaws.com/papardelaragou.png', description:'PAPPARDELLE_OX_TAIL_DESC' },
   { id: 82, name: 'RISOTI', price: 18, category: 'PASTA', description:'RISOTI_DESC' },
   { id: 83, name: 'LINGUINI_OCTOPUS', price: 18, category: 'PASTA', description:'LINGUINI_OCTOPUS_DESC' },
+  { id: 98, name: 'RISOTTO_MUSHROOM', price: 15, category: 'PASTA' },
+
 
   { id: 84, name: 'HOT_DOG', price: 6, category: 'HOTDOG_BURGERS', description:'HOT_DOG_DESC' },
   { id: 85, name: 'BURGER_BBQ', price: 9, category: 'HOTDOG_BURGERS', description:'BURGER_BBQ_DESC' },
   { id: 86, name: 'BURGER_CAESAR', price: 9, category: 'HOTDOG_BURGERS', description:'BURGER_CAESAR_DESC' },
   { id: 87, name: 'BURGER_21', price: 10, category: 'HOTDOG_BURGERS', image:'https://21images.s3.eu-north-1.amazonaws.com/burger.png', description:'BURGER_21_DESC' },
   { id: 88, name: 'DOUBLE_CHEESE_BURGER', price: 10, category: 'HOTDOG_BURGERS', description:'DOUBLE_CHEESE_BURGER_DESC' },
-  { id: 89, name: 'CHICKEN_CRISPY_BURGER', price: 9, category: 'HOTDOG_BURGERS', description:'CHICKEN_CRISPY_BURGER_DESC' },
+  { id: 89, name: 'CHICKEN_CRISPY_BURGER', price: 9, category: 'HOTDOG_BURGERS', description:'CHICKEN_CRISPY_BURGER_DESC',image:'https://21images.s3.eu-north-1.amazonaws.com/crispyburger.jpg' },
 
   // Bao Buns
   { id: 89, name: 'SHRIMP_CHILI_BAO', price: 8, category: 'BAO_BUNS', image: 'https://21images.s3.eu-north-1.amazonaws.com/garida.png', description: 'SHRIMP_CHILI_BAO_DESC' },
@@ -180,8 +182,7 @@ isModalOpen = false;
   { id: 97, name: 'CHEESE_PLATTER', price: 12, category: 'SALADS', description: 'CHEESE_PLATTER_DESC' },
 
   // Main Courses
-  { id: 98, name: 'RISOTTO_MUSHROOM', price: 15, category: 'MAIN_COURSES' },
-  { id: 99, name: 'PORK_PANSETTO', price: 15, category: 'MAIN_COURSES', description: 'PORK_PANSETTO_DESC' },
+  { id: 99, name: 'PORK_PANSETTO', price: 15, category: 'MAIN_COURSES', description: 'PORK_PANSETTO_DESC',image:'https://21images.s3.eu-north-1.amazonaws.com/mprizola.jpg' },
   { id: 100, name: 'TORTILLA_PORK_GYRO', price: 6, category: 'MAIN_COURSES', description: 'TORTILLA_PORK_GYRO_DESC' },
   { id: 101, name: 'CHICKEN_NUGGETS', price: 11, category: 'MAIN_COURSES', image: 'https://21images.s3.eu-north-1.amazonaws.com/nuggets.jpg', description: 'CHICKEN_NUGGETS_DESC' },
   { id: 102, name: 'CHICKEN_NUGGETS_A_LA_CREME', price: 12, category: 'MAIN_COURSES', image: 'https://21images.s3.eu-north-1.amazonaws.com/alacreme.png', description: 'CHICKEN_NUGGETS_A_LA_CREME_DESC' },
