@@ -59,3 +59,34 @@
 .info-btn:hover {
   background: rgba(255, 255, 255, 0.3);
 }
+
+.category-menu {
+  position: sticky; /* OR fixed */
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #222;
+  padding: 8px;
+  z-index: 1000; /* keep above content */
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.category-scroll {
+  display: flex;
+  gap: 10px;
+}
+
+.category-scroll button {
+  background: #444;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.category-scroll button:hover {
+  background: #666;
+}

@@ -15,11 +15,11 @@ export class AppComponent implements AfterViewInit {
   selectedItem: { label: string; link: string } | null = null;
   dropdownOpen = false;
 
-  languages = [
-    { code: 'en', flag: 'assets/flags/uk.png' },
-    { code: 'gr', flag: 'assets/flags/gr.png' },
-  ];
-    selectedLanguage = this.languages[1];
+ languages: Language[] = [
+  { code: 'en', flag: 'assets/flags/uk.png' },
+  { code: 'gr', flag: 'assets/flags/gr.png' },
+];
+selectedLanguage: Language = this.languages[1];
 
 
   constructor(
@@ -65,4 +65,22 @@ export class AppComponent implements AfterViewInit {
     this.translationService.setLanguage(lang.code);
     this.dropdownOpen = false; // close dropdown after selection
   }
+
+  onLanguageToggle() {
+  const currentIndex = this.languages.findIndex(
+    lang => lang.code === this.selectedLanguage.code
+  );
+  const nextIndex = (currentIndex + 1) % this.languages.length;
+  this.selectedLanguage = this.languages[nextIndex];
+  // TypeScript now knows code is 'en' | 'gr'
+  this.translationService.setLanguage(this.selectedLanguage.code);
+}
+
+}
+
+type LanguageCode = 'en' | 'gr';
+
+interface Language {
+  code: LanguageCode;
+  flag: string;
 }

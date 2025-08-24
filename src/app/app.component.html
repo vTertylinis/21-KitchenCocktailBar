@@ -15,6 +15,7 @@
 
 
 <div class="d-flex flex-nowrap justify-content-center w-100" style="padding: 20px;">
+  <!-- Menu buttons -->
   <button 
     class="btn m-1 flex-fill text-fit" 
     *ngFor="let item of menuItems" 
@@ -22,30 +23,15 @@
     {{ item.label | translate }}
   </button>
 
-  <!-- Flag-only dropdown -->
-  <div class="language-dropdown m-1">
+  <!-- Single toggle button for language -->
+  <button class="btn m-1 p-0" (click)="onLanguageToggle()">
     <img 
-      class="selected-flag" 
       [src]="selectedLanguage.flag" 
-      (click)="dropdownOpen = !dropdownOpen" 
       alt="Flag" 
+      style="width: 32px; height: 24px;" 
     />
-
-    <div class="options" *ngIf="dropdownOpen">
-      <img 
-        *ngFor="let lang of languages" 
-        [src]="lang.flag" 
-        (click)="onLanguageChange(lang)" 
-        alt="Flag" 
-        class="option-flag"
-      />
-    </div>
-  </div>
+  </button>
 </div>
-
-
-
-
 
 
 <router-outlet></router-outlet>

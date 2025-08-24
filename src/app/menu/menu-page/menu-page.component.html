@@ -1,5 +1,13 @@
+<div class="category-menu">
+  <div class="category-scroll">
+    <button *ngFor="let category of categories" style="font-size: small;" (click)="scrollToCategory(category)">
+      {{ category | translate }}
+    </button>
+  </div>
+</div>
+
 <div class="catalogue-container">
-  <div *ngFor="let category of categories" class="category-section">
+  <div *ngFor="let category of categories" class="category-section" [id]="category">
     <h2 style="color: white;">{{ category | translate }}</h2>
     <ul>
       <li *ngFor="let item of getItemsByCategory(category)" class="menu-item">
@@ -9,7 +17,6 @@
             title="More info">
             ℹ
           </button>
-
         </span>
         <span class="item-price">
           {{ item.price | currency:'EUR':'symbol':'1.2-2' }}
@@ -18,7 +25,6 @@
     </ul>
   </div>
 </div>
-
 
 <app-item-info-modal [item]="selectedItem" [isOpen]="isModalOpen" (close)="closeModal()">
 </app-item-info-modal>

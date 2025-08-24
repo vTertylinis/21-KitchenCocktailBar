@@ -67,8 +67,8 @@ isModalOpen = false;
   { id: 50, name: 'STRAWBERRY_JUICE', price: 3.5, category: 'JUICES' },
 
   { id: 1, name: 'TOAST', price: 3.5, category: 'TOASTS_CREPS' },
-  { id: 2, name: 'SAVORY_CREPE', price: 4, category: 'TOASTS_CREPS' },
-  { id: 3, name: 'SWEET_CREPE', price: 4, category: 'TOASTS_CREPS' },
+  { id: 2, name: 'SAVORY_CREPE', price: 4, category: 'TOASTS_CREPS',image:'https://21images.s3.eu-north-1.amazonaws.com/almiri.jpg' },
+  { id: 3, name: 'SWEET_CREPE', price: 4, category: 'TOASTS_CREPS',image:'https://21images.s3.eu-north-1.amazonaws.com/glykia.jpg' },
 
   { id: 4, name: 'BARREL_SMALL', price: 4, category: 'BEERS' },
   { id: 5, name: 'BARREL_LARGE', price: 5, category: 'BEERS' },
@@ -121,14 +121,14 @@ isModalOpen = false;
     { id: 50, name: "Bartender's choice", price: 10, category: 'Cocktails' },
 
   { id: 51, name: 'OMELETTE', price: 7, category: 'BREAKFAST',image:'https://21images.s3.eu-north-1.amazonaws.com/omeleta.png', description:'OMELETTE_DESC' },
-  { id: 52, name: 'SCRAMBLED_EGGS', price: 6, category: 'BREAKFAST',description:'SCRAMBLED_EGGS_DESC' },
+  { id: 52, name: 'SCRAMBLED_EGGS', price: 6, category: 'BREAKFAST',description:'SCRAMBLED_EGGS_DESC', image:'https://21images.s3.eu-north-1.amazonaws.com/scrable.jpg' },
   { id: 53, name: 'SCRAMBLED_EGGS_SALMON', price: 7, category: 'BREAKFAST',description:'SCRAMBLED_EGGS_SALMON_DESC' },
   { id: 54, name: 'FRENCH_TOAST_SIMPLE', price: 5,image:'https://21images.s3.eu-north-1.amazonaws.com/frenchtoast.png', category: 'BREAKFAST' },
   { id: 55, name: 'FRENCH_TOAST_HONEY_CINNAMON', price: 6, category: 'BREAKFAST' },
   { id: 56, name: 'PANCAKE_PRALINE', price: 7, category: 'BREAKFAST' },
   { id: 57, name: 'PANCAKE_HONEY_CINNAMON', price: 7, category: 'BREAKFAST' },
   { id: 58, name: 'PANCAKE_PRALINE_BANANA_HAZELNUT', price: 9, category: 'BREAKFAST' },
-  { id: 59, name: 'FRIED_EGGS_BACON', price: 6, category: 'BREAKFAST' },
+  { id: 59, name: 'FRIED_EGGS_BACON', price: 6, category: 'BREAKFAST',image:'https://21images.s3.eu-north-1.amazonaws.com/2auga.jpg' },
   { id: 60, name: 'YOGURT_HONEY_WALNUTS', price: 5, category: 'BREAKFAST' },
   { id: 61, name: 'YOGURT_HONEY_WALNUTS_FRUITS', price: 6, category: 'BREAKFAST' },
 
@@ -215,6 +215,14 @@ isModalOpen = false;
 closeModal() {
   this.isModalOpen = false;
 }
+
+scrollToCategory(category: string) {
+  const element = document.getElementById(category);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+
 
 }
 
