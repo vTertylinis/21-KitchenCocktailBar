@@ -157,9 +157,8 @@ isModalOpen = false;
   { id: 79, name: 'PASTA_21', price: 9, category: 'PASTA', description:'PASTA_21_DESC', image:'https://21images.s3.eu-north-1.amazonaws.com/pasta21.jpg' },
   { id: 80, name: 'SHRIMP_PASTA', price: 18, category: 'PASTA', image:'https://21images.s3.eu-north-1.amazonaws.com/garidomakaronada.png', description:'SHRIMP_PASTA_DESC' },
   { id: 81, name: 'PAPPARDELLE_OX_TAIL', price: 16, category: 'PASTA', image:'https://21images.s3.eu-north-1.amazonaws.com/papardelaragou.png', description:'PAPPARDELLE_OX_TAIL_DESC' },
-  { id: 82, name: 'RISOTI', price: 18, category: 'PASTA', description:'RISOTI_DESC' },
+  { id: 82, name: 'RISOTI', price: 15, category: 'PASTA', description:'RISOTI_DESC' },
   { id: 83, name: 'LINGUINI_OCTOPUS', price: 18, category: 'PASTA', description:'LINGUINI_OCTOPUS_DESC' },
-  { id: 98, name: 'RISOTTO_MUSHROOM', price: 15, category: 'PASTA' },
 
 
   { id: 84, name: 'HOT_DOG', price: 6, category: 'HOTDOG_BURGERS', description:'HOT_DOG_DESC' },
