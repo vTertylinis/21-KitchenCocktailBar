@@ -1,6 +1,5 @@
 <div class="contact-container">
   <h1>{{ 'CONTACT_TITLE' | translate }}</h1>
-
   <p>{{ 'CONTACT_INTRO' | translate }}</p>
 
   <div class="contact-details">
@@ -9,16 +8,33 @@
     <p><strong>{{ 'EMAIL_LABEL' | translate }}:</strong> info&#64;21kitchencocktailbar.gr</p>
   </div>
 
-  <form class="contact-form">
+  <div class="contact-form">
     <label for="name">{{ 'FORM_NAME_LABEL' | translate }}</label>
-    <input type="text" id="name" name="name" placeholder="{{ 'FORM_NAME_PLACEHOLDER' | translate }}" />
+    <input id="name"
+           type="text"
+           [ngModel]="contact.name"
+           (ngModelChange)="contact.name = $event"
+           placeholder="{{ 'FORM_NAME_PLACEHOLDER' | translate }}" />
 
     <label for="email">{{ 'FORM_EMAIL_LABEL' | translate }}</label>
-    <input type="email" id="email" name="email" placeholder="{{ 'FORM_EMAIL_PLACEHOLDER' | translate }}" />
+    <input id="email"
+           type="email"
+           [ngModel]="contact.email"
+           (ngModelChange)="contact.email = $event"
+           placeholder="{{ 'FORM_EMAIL_PLACEHOLDER' | translate }}" />
 
     <label for="message">{{ 'FORM_MESSAGE_LABEL' | translate }}</label>
-    <textarea id="message" name="message" rows="5" placeholder="{{ 'FORM_MESSAGE_PLACEHOLDER' | translate }}"></textarea>
+    <textarea id="message"
+              [ngModel]="contact.message"
+              (ngModelChange)="contact.message = $event"
+              rows="5"
+              placeholder="{{ 'FORM_MESSAGE_PLACEHOLDER' | translate }}"></textarea>
 
-    <button type="submit">{{ 'FORM_SUBMIT' | translate }}</button>
-  </form>
+    <button (click)="sendMessage()" [disabled]="submitting">
+      {{ submitting ? ('FORM_SUBMITTING' | translate) : ('FORM_SUBMIT' | translate) }}
+    </button>
+
+    <div class="form-success" *ngIf="success">{{ 'FORM_SUCCESS' | translate }}</div>
+    <div class="form-error" *ngIf="error">{{ error }}</div>
+  </div>
 </div>
