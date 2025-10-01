@@ -154,6 +154,8 @@ isModalOpen = false;
   { id: 76, name: 'NAPOLITANA', price: 8, category: 'PASTA', description:'NAPOLITANA_DESC' },
   { id: 77, name: 'BOLOGNESE', price: 9, category: 'PASTA', description:'BOLOGNESE_DESC' },
   { id: 78, name: 'CARBONARA', price: 9, category: 'PASTA', description:'CARBONARA_DESC' },
+  { id: 78, name: 'penesMeKotopoulo', price: 11, category: 'PASTA', description:'penesMeKotopouloDesc' },
+  { id: 78, name: 'rigatoniCheeses', price: 9, category: 'PASTA', description:'rigatoniCheesesDesc' },
   { id: 79, name: 'PASTA_21', price: 9, category: 'PASTA', description:'PASTA_21_DESC', image:'https://21images.s3.eu-north-1.amazonaws.com/pasta21.jpg' },
   { id: 80, name: 'SHRIMP_PASTA', price: 18, category: 'PASTA', image:'https://21images.s3.eu-north-1.amazonaws.com/garidomakaronada.png', description:'SHRIMP_PASTA_DESC' },
   { id: 81, name: 'PAPPARDELLE_OX_TAIL', price: 16, category: 'PASTA', image:'https://21images.s3.eu-north-1.amazonaws.com/papardelaragou.png', description:'PAPPARDELLE_OX_TAIL_DESC' },
@@ -166,7 +168,10 @@ isModalOpen = false;
   { id: 86, name: 'BURGER_CAESAR', price: 9, category: 'HOTDOG_BURGERS', description:'BURGER_CAESAR_DESC' },
   { id: 87, name: 'BURGER_21', price: 10, category: 'HOTDOG_BURGERS', image:'https://21images.s3.eu-north-1.amazonaws.com/burger.png', description:'BURGER_21_DESC' },
   { id: 88, name: 'DOUBLE_CHEESE_BURGER', price: 10, category: 'HOTDOG_BURGERS', description:'DOUBLE_CHEESE_BURGER_DESC' },
-  { id: 89, name: 'CHICKEN_CRISPY_BURGER', price: 9, category: 'HOTDOG_BURGERS', description:'CHICKEN_CRISPY_BURGER_DESC',image:'https://21images.s3.eu-north-1.amazonaws.com/crispyburger.jpg' },
+  { id: 89, name: 'CHICKEN_CRISPY_BURGER', price: 10, category: 'HOTDOG_BURGERS', description:'CHICKEN_CRISPY_BURGER_DESC',image:'https://21images.s3.eu-north-1.amazonaws.com/crispyburger.jpg' },
+  { id: 189, name: 'burgerChilicrispychicken', price: 10, category: 'HOTDOG_BURGERS', description:'burgerChilicrispychickenDesc'},
+  { id: 289, name: 'doubleSmash', price: 11, category: 'HOTDOG_BURGERS', description:'doubleSmashdesc'},
+  { id: 300, name: 'miniBurgers', price: 11, category: 'HOTDOG_BURGERS', description:'miniBurgersDesc'},
 
   // Bao Buns
   { id: 89, name: 'SHRIMP_CHILI_BAO', price: 8, category: 'BAO_BUNS', image: 'https://21images.s3.eu-north-1.amazonaws.com/garida.png', description: 'SHRIMP_CHILI_BAO_DESC' },
@@ -191,7 +196,7 @@ isModalOpen = false;
   { id: 106, name: 'BEEF_PATTY', price: 11, category: 'MAIN_COURSES', description: 'BEEF_PATTY_DESC' },
   { id: 107, name: 'PORK_GYRO', price: 11, category: 'MAIN_COURSES', description: 'PORK_GYRO_DESC' },
   { id: 108, name: 'MIX_GRILL', price: 17, category: 'MAIN_COURSES', description: 'MIX_GRILL_DESC' },
-  { id: 109, name: 'FRIES_PORTION', price: 5, category: 'MAIN_COURSES' }
+  { id: 208, name: 'potatosCheeseBacon', price: 6, category: 'MAIN_COURSES', description:'potatosCheeseBaconDesc' }
   ];
   categories: string[] = [];
 

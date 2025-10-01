@@ -234,6 +234,58 @@
     "en": "Chicken Crispy Burger",
     "gr": "Chicken crispy burger"
   },
+  "burgerChilicrispychicken": {
+    "en": "Burger Chili Crispy Chicken",
+    "gr": "Burger Chili Crispy Chicken"
+  },
+  "burgerChilicrispychickenDesc": {
+    "en": "With Sweet Chilli Sauce",
+    "gr": "Με γλυκιά σάλτσα τσίλι"
+  },
+  "doubleSmash":{
+    "en": "Double Smash Burger",
+    "gr": "Double Smash Burger"
+  },
+  "doubleSmashdesc":{
+    "en": "With Sauce 21, cheddar, caramelized bacon, tomato, iceberg lettuce.",
+    "gr": "Με Sauce 21, cheddar, καραμελωμένο bacon, ντομάτα, iceberg."
+  },
+  "miniBurgers":{
+    "en": "Various mini burgers",
+    "gr": "Διάφορα μίνι Burgers"
+  },
+  "miniBurgersDesc":{
+    "en": "Burger 21, Burger BBQ, BurgerDouble Cheese",
+    "gr": "Burger 21, Burger BBQ, BurgerDouble Cheese"
+  },
+  "penesMeKotopoulo":{
+    "en": "Penne Pasta with Chicken",
+    "gr": "Πέννες με Κοτόπουλο"
+  },
+  "penesMeKotopouloDesc":{
+    "en": "Mushrooms and Basil Sauce",
+    "gr": "Μανιτάρια και Σάλτσα Βασιλικού"
+  },
+  "rigatoniCheeses":{
+    "en": "Rigatoni with 4 cheese sauce",
+    "gr": "Ριγκατόνι με σάλτσα 4 τυριών"
+  },
+  "rigatoniCheesesDesc":{
+    "en": "Parmigiano, Gouda, Mozzarella, and Gorgonzola",
+    "gr": "Παρμεζάνα, Γκούντα, Μοτσαρέλα και Γκοργκοτζόλα"
+  },
+  "potatosCheeseBacon":{
+    "en": "French Fries",
+    "gr": "Πατάτες Τηγανητές"
+  },
+  "potatosCheeseBaconDesc":{
+    "en": "With Cheddar Sauce and Bacon Chips",
+    "gr": "Με Sauce Cheddar και Chips Bacon"
+  },
+  
+  
+  
+  
 
   "SHRIMP_CHILI_BAO": { "en": "Shrimp Chili Bao", "gr": "Shrimp chili bao" },
   "NUGGETS_BAO": { "en": "Nuggets Bao", "gr": "Nuggets bao" },
